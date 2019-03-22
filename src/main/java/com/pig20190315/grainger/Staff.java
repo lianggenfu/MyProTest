@@ -1,0 +1,42 @@
+package com.pig20190315.grainger;
+
+import java.math.BigDecimal;
+
+public class Staff {
+
+    private  String name;
+
+    private int age;
+
+    private BigDecimal salary;
+
+    public Staff(String jack, int i, BigDecimal bigDecimal) {
+        this.name = jack;
+        this.age = i;
+        this.salary = bigDecimal;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
+}

@@ -2,7 +2,7 @@ package com.pig20190312.grainger;
 
 import java.util.*;
 
-public class HashTest {
+public class    HashTest {
     private static List<Integer> numList = new ArrayList();
 
     public static void main(String[] args) {

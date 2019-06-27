@@ -8,6 +8,8 @@ public class ttt1 {
         int temp1 = a%100;
         int a2 = temp1%10;
 
+        System.out.println("试点范围封测");
+
         System.out.println(a1+" "+a2+" "+temp1);
     }
 }

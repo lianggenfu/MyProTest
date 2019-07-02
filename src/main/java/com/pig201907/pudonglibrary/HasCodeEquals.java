@@ -4,24 +4,33 @@ import java.util.Objects;
 
 public class HasCodeEquals {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String s1 = "通话";
         String s2 = "重地";
 
         System.out.println(s1.hashCode()+" "+s2.hashCode());
         System.out.println(s1.equals(s2));
         // 1179395 1179395  true
-    }
-
-
-    /*public static void main(String[] args) {
-        Person person = new Person("通话");
-        Person person1 = new Person("通话");;
-        System.out.println(person.hashCode()+" "+person1.hashCode());
-        System.out.println(person.equals(person1));
     }*/
+
+
+    public static void main(String[] args) {
+        Person person = new Person("zhangsan ");
+        Person person1 = new Person("通话");
+        //person.setName("ssdfs");
+        System.out.println(person.hashCode()+" "+person1.hashCode());
+        //System.out.println(person.equals(person1));
+    }
     static class Person{
         private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
 
         public Person(String name) {
             this.name = name;

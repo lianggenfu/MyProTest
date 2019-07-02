@@ -14,6 +14,7 @@ public class HashMapTest {
         map.put("3","C");
         map.put("4","D");
         map.put("5","A");
+        map.put("9","A");
 
         /*
         * 第一种，遍历value值

@@ -1,7 +1,10 @@
 package com.pig201907.pudonglibrary;
 
 import java.util.concurrent.Semaphore;
-
+/*
+* 多线程基础，8个工人，5台机器，每个工人同时只能使用一台机器
+* 上一个工人使用结束才能被下一个工人使用
+* */
 public class ThreadTest {
 
     public static void main(String[] args) {

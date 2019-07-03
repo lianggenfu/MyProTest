@@ -2,6 +2,8 @@ package com.pig201907.pudonglibrary.Test;
 
 public class Action {
 
+    private static final int con = 308;
+
     public static void main(String[] args) {
 
         Person person = new Person();

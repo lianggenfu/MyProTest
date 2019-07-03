@@ -1,5 +1,8 @@
 package Hash.HashMap;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.*;
 
 /*
@@ -15,6 +18,7 @@ public class HashMapTest {
         map.put("4","D");
         map.put("5","A");
         map.put("9","A");
+
 
         /*
         * 第一种，遍历value值
@@ -35,7 +39,7 @@ public class HashMapTest {
         /*
         * 第四种  根据value取key值
         * */
-        getKeyByValue(map);
+        //getKeyByValue(map);
     }
 
     private static void getKeyByValue(Map<String, String> map) {

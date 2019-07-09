@@ -9,6 +9,30 @@ public class Person implements Serializable {
     private int age;
     private String sex;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     final public void work(){ //final 修饰的最终方法 可以被子类继承，但不能被重写
         System.out.println("a person can do work");
     }

@@ -21,22 +21,46 @@ public class Byte2 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("请输入单词个数: ");
-        int num = input.nextInt();
 
-        System.out.println("请输入密文: ");  //wloemce to dneyetbca
+        System.out.println("请输入密文: ");  //wloemce to btdnecaey
         Scanner in = new Scanner(System.in);
         String message = in.nextLine();
 
         String[] strings = message.split(" ");
         StringBuilder rs = new StringBuilder("");
         for (String s : strings){
-            rs.append(cac(s)+" ");
+            rs.append(decrypt(s)+" ");
         }
         System.out.println("解密结果为:"+rs);
     }
 
-    private static String cac(String message) {
+   /* public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("请输入需要加密的内容");  //welcome ——> wlm
+        String message = in.nextLine();
+        String[] strings = message.split(" ");
+        StringBuilder rs = new StringBuilder("");
+        for (String s : strings){
+            rs.append(encryption(s)+" ");
+        }
+        //String rs = encryption(message);
+        System.out.println("加密结果为："+rs);
+    }*/
+
+    private static String encryption(String message) {
+        StringBuilder head = new StringBuilder("");
+        StringBuilder tail = new StringBuilder("");
+        for(int i = 0; i<message.length(); i++){
+            if(i%2==0){
+                head.append(message.charAt(i));
+            }else {
+                tail.append(message.charAt(i));
+            }
+        }
+        return head.append(tail.reverse()).toString();
+    }
+
+    private static String decrypt(String message) {
         String head = message.substring(0,(message.length()+1)/2);
         String tail = message.substring((message.length()+1)/2);
         StringBuilder stringBuilder = new StringBuilder("");

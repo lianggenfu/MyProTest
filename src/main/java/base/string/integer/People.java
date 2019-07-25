@@ -1,6 +1,4 @@
-package base.integer;
-
-import com.pig201907.pudonglibrary.Test.Person;
+package base.string.integer;
 
 public class People {
     private String name;

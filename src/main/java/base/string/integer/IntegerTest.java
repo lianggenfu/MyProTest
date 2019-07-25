@@ -1,4 +1,4 @@
-package base.integer;
+package base.string.integer;
 
 public class IntegerTest {
 

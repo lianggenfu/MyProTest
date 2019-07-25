@@ -1,8 +1,6 @@
-package base.integer;
+package base.string;
 
-import java.util.Arrays;
-
-public class StringTest {
+public class allTest {
 
    /* public static void main(String[] args) {
         String s = "sdfsdfwef";
